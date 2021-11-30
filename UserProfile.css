@@ -3,39 +3,35 @@ body {
     color: #505050;
     font-weight: 400;
     background-color: rgba(208, 222, 222, 0.79);
-
+width: 100vw;
 }
 
 .main {
     height: 100vh;
     width: 100%;
-    position: relative;
 
 }
 
 .background {
     background-image: url("https://inbio-react.netlify.app/static/7d0974d6bfb4f74a14207d3b22945292/72f33/bg-image-9.webp");
-    width: 100%;
+    width: auto;
     height: 45%;
     background-size: cover;
     background-position: center;
 }
 
 .container {
-    padding: 100px;
+    margin: 100px;
     position: absolute;
     height: auto;
-    width: auto;
+    max-width: 100%;
     top: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .header {
     border-radius: 35px/30px;
     background-color: white;
-    width: 100%;
+    width: auto;
 }
 
 .profilePhoto {
@@ -86,7 +82,25 @@ body {
 }
 
 .content3 {
+    display: none;
+    border-radius: 35px/30px;
+    background-color: white;
+    padding: 40px;
+    margin: 20px 0 0 20px;
+    width: 100%;
+}
 
+.content4 {
+    display: none;
+    border-radius: 35px/30px;
+    background-color: white;
+    padding: 40px;
+    margin: 20px 0 0 20px;
+    width: 100%;
+}
+
+.content5 {
+    display: none;
     border-radius: 35px/30px;
     background-color: white;
     padding: 40px;
@@ -141,7 +155,7 @@ p, h5 {
 
 .contactBox {
     margin: 10px;
-    width: 200px;
+    width: 150px;
     height: 50px;
 }
 
@@ -232,7 +246,7 @@ li {
     margin: 10px;
     padding: 20px;
     height: auto;
-    width: 300px;
+    width: auto;
     box-shadow: 0 0 10px -3px #262626;
 }
 
@@ -242,6 +256,41 @@ li {
     border-radius: 10px/10px;
 }
 
+.contactCard {
+    background-color: rgba(208, 222, 222, 0.79);
+    border-radius: 10px/10px;
+    margin: 10px;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    box-shadow: 0 0 10px -3px #262626;
+
+}
+
+label {
+    display: block;
+    margin: 20px 0 0 0;
+}
+ input {
+     height: 50px;
+     border-radius: 10px/10px;
+     border: 1px solid gray;
+ }
+
+.contactCard img {
+    width: 250px;
+}
+
+
+.sendButton {
+    height: 50px;
+    width: 150px;
+    background: rgb(181, 194, 194);
+    background: linear-gradient(346deg, rgba(181, 194, 194, 1) 0%, rgba(224, 242, 242, 0.989233193277311) 82%);
+    box-shadow: 0 0 10px -3px #262626;
+    border: none;
+    margin: 10px 0 0 0;
+}
 
 .d-flex {
     display: flex;
@@ -358,6 +407,10 @@ li {
 
 .w-60 {
     width: 60%;
+}
+
+.h-150 {
+    height: 150px;
 }
 
 
