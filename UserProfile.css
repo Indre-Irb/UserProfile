@@ -2,10 +2,11 @@ body {
     font-family: 'M PLUS 2', sans-serif;
     color: #505050;
     font-weight: 400;
+    background-color: rgba(208, 222, 222, 0.79);
+
 }
 
 .main {
-    background-color: rgba(208, 222, 222, 0.79);
     height: 100vh;
     width: 100%;
     position: relative;
@@ -24,15 +25,17 @@ body {
     padding: 50px;
     position: absolute;
     height: auto;
-    width: 70%;
-    left: 10%;
+    width: auto;
     top: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
     border-radius: 35px/30px;
     background-color: white;
-    padding: 20px 30px 20px 30px;
+    width: 100%;
 }
 
 .profilePhoto {
@@ -44,34 +47,38 @@ body {
     margin: -115px 50px;
 }
 
-img {
+.image1 {
     height: 200px;
     width: 200px;
     border-radius: 35px/30px;
+}
+
+.image2 {
+    border-radius: 35px/30px;
+    height: 400px;
+    width: auto;
 }
 
 .menu {
     border-radius: 35px/30px;
     background-color: white;
     padding: 20px;
-    margin: 20px;
-
+    margin: 20px 20px 0 0;
+    height: 100%;
 }
 
-.content {
+.content1 {
     border-radius: 35px/30px;
     background-color: white;
-    padding: 20px;
-    margin: 20px
+    padding: 40px;
+    margin: 20px 0 0 20px;
 }
 
 .menuButton {
-    width: 100%;
-    height: 50px;
-}
+    width: 150px;
+    height: 90px;
+    margin: 10px;
 
-.content {
-    border-radius: 35px/30px;
 }
 
 .icon {
@@ -98,16 +105,61 @@ p, h5 {
 
 .contactBox {
     margin: 10px;
-    width: 150px;
+    width: 200px;
     height: 50px;
 }
 
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li:before {
+    content: '✓';
+}
+
+li {
+    margin: 10px;
+}
+
+.hireButton {
+    height: 50px;
+    width: 150px;
+    background: rgb(181, 194, 194);
+    background: linear-gradient(346deg, rgba(181, 194, 194, 1) 0%, rgba(224, 242, 242, 0.989233193277311) 82%);
+    box-shadow: 0 0 10px -3px #262626;
+    border: none;
+}
+
+
+.doing {
+    border: 1px solid lightgray;
+    border-radius: 35px/30px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.clientCard {
+    background: rgb(181, 194, 194);
+    background: linear-gradient(346deg, rgba(181, 194, 194, 1) 0%, rgba(224, 242, 242, 0.989233193277311) 82%);
+    box-shadow: 0 0 10px -3px #262626;
+    height: 200px;
+    width: 160px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
 
 .d-flex {
     display: flex;
 }
 
 .s-evenly {
+    justify-content: space-evenly;
+}
+
+.s-between {
     justify-content: space-between;
 }
 
@@ -139,6 +191,10 @@ p, h5 {
     justify-content: center;
 }
 
+.f-column {
+    flex-direction: column;
+}
+
 .text-center {
     text-align: center;
 }
@@ -147,7 +203,15 @@ p, h5 {
     font-weight: 500;
 }
 
-.m-10 {
-    margin: 10px
+.ml-30 {
+    margin-left: 30px
+}
+
+.colorRed {
+    color: #ea5454;
+}
+
+.f-size-30 {
+    font-size: 30px;
 }
 
