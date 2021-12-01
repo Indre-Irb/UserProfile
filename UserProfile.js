@@ -6,6 +6,11 @@ const content4 = document.querySelector(".content4")
 const content5 = document.querySelector(".content5")
 
 
+content2.style.display = "none";
+content3.style.display = "none";
+content4.style.display = "none";
+content5.style.display = "none";
+
 menu[0].onclick=()=> {
     content1.style.display = "block";
     content2.style.display = "none";
@@ -39,5 +44,5 @@ menu[4].onclick=()=> {
     content2.style.display = "none";
     content3.style.display = "none";
     content4.style.display = "none";
-    content5.style.display = "block";
+    content5.style.display = "flex";
 }
