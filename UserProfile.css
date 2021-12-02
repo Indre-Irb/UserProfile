@@ -10,8 +10,6 @@ body {
 .main {
     height: 100vh;
     width: 100%;
-
-
 }
 
 .background {
@@ -31,7 +29,7 @@ body {
 .header {
     border-radius: 35px/30px;
     background-color: white;
-    width: auto;
+    width: 100%;
 }
 
 .profilePhoto {
@@ -69,14 +67,11 @@ body {
 }
 
 .content1 {
-
     border-radius: 35px/30px;
     background-color: white;
     padding: 40px;
     margin: 20px 0 0 20px;
     width: 100%;
-
-
 }
 
 .content2 {
@@ -209,7 +204,7 @@ li {
 
 .resumeCard {
     width: auto;
-    height: auto;
+    height: 100%;
     background-color: rgba(208, 222, 222, 0.79);
     margin: 10px;
     align-items: center;
@@ -260,12 +255,32 @@ li {
 }
 
 .workModal {
-    height: 150px;
-    width: 250px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(229,234,234,1);
 }
 
+.modalCard {
+    display: none;
+    background-color: rgba(229, 234, 234, 1);
+    border-radius: 10px/10px;
+    margin: 160px;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    box-shadow: 0 0 10px -3px #262626;
+    cursor: pointer;
+}
 
-.workCard img {
+.workCard img, .modalCard img {
     height: auto;
     width: 100%;
     border-radius: 10px/10px;
@@ -279,7 +294,6 @@ li {
     height: auto;
     width: auto;
     box-shadow: 0 0 10px -3px #262626;
-
 }
 
 label {
@@ -318,11 +332,19 @@ input {
     display: none;
 }
 
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
 /*Hover effects*/
 
 .icons i:hover, button:hover, .menuButton:hover {
-    color: white;
-    background: #ea5454;
+    color: white !important;
+    background: #ea5454 !important;
     transform: translate(0, -5px);
     border-radius: 10px/10px;
 }
@@ -331,7 +353,7 @@ input {
     color: #ea5454;
 }
 
-img:hover {
+.workCard img:hover, .image2:hover{
     transform: scale(1.2);
 }
 .resumeCard:hover {
