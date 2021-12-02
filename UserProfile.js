@@ -28,7 +28,7 @@ menu[1].onclick = () => {
 menu[2].onclick = () => {
     content1.style.display = "none";
     content2.style.display = "none";
-    content3.style.display = "block";
+    content3.style.display = "flex";
     content4.style.display = "none";
     content5.style.display = "none";
 }
@@ -36,7 +36,7 @@ menu[3].onclick = () => {
     content1.style.display = "none";
     content2.style.display = "none";
     content3.style.display = "none";
-    content4.style.display = "block";
+    content4.style.display = "flex";
     content5.style.display = "none";
 }
 menu[4].onclick = () => {
