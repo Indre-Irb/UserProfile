@@ -75,7 +75,6 @@ darkMode.onclick = () => {
 
 function changeColor() {
     addDark.forEach(x => {
-        console.log(x)
         if (!change) {
             document.body.style.background = "black"
             x.style.background = "rgb(91,90,90)"
@@ -89,3 +88,5 @@ function changeColor() {
     })
     change = !change
 }
+
+
